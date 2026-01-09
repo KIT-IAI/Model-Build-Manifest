@@ -7,7 +7,7 @@
 
 <h1 align="center"># Decoupled Energy System Optimization</h1>
 
-**⚠️ Note**: *Last update on 09.09.2025*
+**⚠️ Note**: *Last update on 09.01.2026*
 
 <div align="left"> This repository is the official code of the paper <strong>"The Model-Build-Manifest: A Dependency Injection pattern for Structural Coupling in Sector-Coupled Energy Systems"</strong></div> 
 

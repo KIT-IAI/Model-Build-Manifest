@@ -1,0 +1,737 @@
+{
+  "Sets": {
+    "nodes": {
+      "type": "simple",
+      "data": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "edges": {
+      "type": "simple",
+      "data": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    "lines": {
+      "type": "simple",
+      "data": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    "trafo": {
+      "type": "simple",
+      "data": []
+    },
+    "slack_nodes": {
+      "type": "simple",
+      "data": [
+        0
+      ]
+    },
+    "pq_nodes": {
+      "type": "simple",
+      "data": [
+        0,
+        1,
+        2
+      ]
+    },
+    "sgen_nodes": {
+      "type": "simple",
+      "data": [
+        0
+      ]
+    },
+    "generator_nodes": {
+      "type": "simple",
+      "data": []
+    },
+    "mapping_load": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": [],
+        "1": [],
+        "2": [
+          0
+        ],
+        "3": [
+          1
+        ],
+        "4": [],
+        "5": [
+          2
+        ]
+      }
+    },
+    "mapping_sgen": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [
+          0
+        ],
+        "5": []
+      }
+    },
+    "mapping_storage": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      }
+    },
+    "mapping_gen": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      }
+    },
+    "mapping_PtG": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {}
+    },
+    "mapping_GtP": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {}
+    }
+  },
+  "Parameters": {
+    "g_ff": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": 612.8103127766655,
+        "1,2": 1225.620625553331,
+        "2,3": 2042.7010425888852,
+        "1,4": 1532.0257819416636,
+        "2,5": 1021.3505212944426
+      },
+      "default": 0.0
+    },
+    "b_ff": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": -79.21306070098456,
+        "1,2": -158.44591343568675,
+        "2,3": -264.08355956035535,
+        "1,4": -198.06036059966604,
+        "2,5": -132.0358421700624
+      },
+      "default": 0.0
+    },
+    "g_ft": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": -612.8103127766655,
+        "1,2": -1225.620625553331,
+        "2,3": -2042.7010425888852,
+        "1,4": -1532.0257819416636,
+        "2,5": -1021.3505212944426
+      },
+      "default": 0.0
+    },
+    "b_ft": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": 79.22625539012964,
+        "1,2": 158.45251078025927,
+        "2,3": 264.0875179670989,
+        "1,4": 198.06563847532408,
+        "2,5": 132.04375898354945
+      },
+      "default": 0.0
+    },
+    "g_tt": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": 612.8103127766655,
+        "1,2": 1225.620625553331,
+        "2,3": 2042.7010425888852,
+        "1,4": 1532.0257819416636,
+        "2,5": 1021.3505212944426
+      },
+      "default": 0.0
+    },
+    "b_tt": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": -79.21306070098456,
+        "1,2": -158.44591343568675,
+        "2,3": -264.08355956035535,
+        "1,4": -198.06036059966604,
+        "2,5": -132.0358421700624
+      },
+      "default": 0.0
+    },
+    "g_tf": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": -612.8103127766655,
+        "1,2": -1225.620625553331,
+        "2,3": -2042.7010425888852,
+        "1,4": -1532.0257819416636,
+        "2,5": -1021.3505212944426
+      },
+      "default": 0.0
+    },
+    "b_tf": {
+      "type": "indexed",
+      "index": "edges",
+      "data": {
+        "0,1": 79.22625539012964,
+        "1,2": 158.45251078025927,
+        "2,3": 264.0875179670989,
+        "1,4": 198.06563847532408,
+        "2,5": 132.04375898354945
+      },
+      "default": 0.0
+    },
+    "sn_mva": {
+      "type": "simple",
+      "data": 1.0
+    },
+    "vn": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": 20.0,
+        "1": 20.0,
+        "2": 20.0,
+        "3": 20.0,
+        "4": 20.0,
+        "5": 20.0
+      },
+      "default": 0.0
+    },
+    "vm_pu_lb": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": 0.9,
+        "1": 0.9,
+        "2": 0.9,
+        "3": 0.9,
+        "4": 0.9,
+        "5": 0.9
+      },
+      "default": 0.9
+    },
+    "vm_pu_ub": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": 1.1,
+        "1": 1.1,
+        "2": 1.1,
+        "3": 1.1,
+        "4": 1.1,
+        "5": 1.1
+      },
+      "default": 1.1
+    },
+    "inflow_set": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "1": [
+          0
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          1
+        ],
+        "5": [
+          2
+        ]
+      },
+      "default": [],
+      "domain": "Any"
+    },
+    "outflow_set": {
+      "type": "indexed",
+      "index": "nodes",
+      "data": {
+        "0": [
+          1
+        ],
+        "1": [
+          2,
+          4
+        ],
+        "2": [
+          3,
+          5
+        ]
+      },
+      "default": [],
+      "domain": "Any"
+    }
+  },
+  "Variables": {
+    "P": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "Q": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "U": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": 1.0,
+      "bounds": null
+    },
+    "W": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": 0.0,
+      "bounds": null
+    },
+    "Pload": {
+      "indices": [
+        "pq_nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "Qload": {
+      "indices": [
+        "pq_nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "Psgen": {
+      "indices": [
+        "sgen_nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "Qsgen": {
+      "indices": [
+        "sgen_nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "Pgen": {
+      "indices": [
+        "generator_nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "Qgen": {
+      "indices": [
+        "generator_nodes",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "p_f": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "q_f": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "i_f_real": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "i_f_imag": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "p_t": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "q_t": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "i_t_real": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    },
+    "i_t_imag": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "domain": "Reals",
+      "initialize": null,
+      "bounds": null
+    }
+  },
+  "Constraints": {
+    "vm_pu_lb_constr": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "rule_name": "vm_pu_lb_constr"
+    },
+    "vm_pu_ub_constr": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "rule_name": "vm_pu_ub_constr"
+    },
+    "nodal_power_balance_P": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "rule_name": "nodal_power_balance_P"
+    },
+    "nodal_power_balance_Q": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "rule_name": "nodal_power_balance_Q"
+    },
+    "nodal_power_inj_P": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "rule_name": "nodal_power_injection_P"
+    },
+    "nodal_power_inj_Q": {
+      "indices": [
+        "nodes",
+        "T"
+      ],
+      "rule_name": "nodal_power_injection_Q"
+    },
+    "edge_flow_p_from": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_p_from"
+    },
+    "edge_flow_p_to": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_p_to"
+    },
+    "edge_flow_q_from": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_q_from"
+    },
+    "edge_flow_q_to": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_q_to"
+    },
+    "edge_flow_i_from_real": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_i_from_real"
+    },
+    "edge_flow_i_from_imag": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_i_from_imag"
+    },
+    "edge_flow_i_to_real": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_i_to_real"
+    },
+    "edge_flow_i_to_imag": {
+      "indices": [
+        "edges",
+        "T"
+      ],
+      "rule_name": "edge_flow_i_to_imag"
+    }
+  },
+  "Enet_keys": [
+    "bus",
+    "load",
+    "sgen",
+    "motor",
+    "asymmetric_load",
+    "asymmetric_sgen",
+    "storage",
+    "gen",
+    "switch",
+    "shunt",
+    "svc",
+    "ssc",
+    "ext_grid",
+    "line",
+    "trafo",
+    "trafo3w",
+    "impedance",
+    "tcsc",
+    "dcline",
+    "ward",
+    "xward",
+    "measurement",
+    "pwl_cost",
+    "poly_cost",
+    "characteristic",
+    "controller",
+    "group",
+    "line_geodata",
+    "bus_geodata",
+    "_empty_res_bus",
+    "_empty_res_ext_grid",
+    "_empty_res_line",
+    "_empty_res_trafo",
+    "_empty_res_load",
+    "_empty_res_asymmetric_load",
+    "_empty_res_asymmetric_sgen",
+    "_empty_res_motor",
+    "_empty_res_sgen",
+    "_empty_res_shunt",
+    "_empty_res_svc",
+    "_empty_res_ssc",
+    "_empty_res_switch",
+    "_empty_res_impedance",
+    "_empty_res_tcsc",
+    "_empty_res_dcline",
+    "_empty_res_ward",
+    "_empty_res_xward",
+    "_empty_res_trafo_3ph",
+    "_empty_res_trafo3w",
+    "_empty_res_bus_3ph",
+    "_empty_res_ext_grid_3ph",
+    "_empty_res_line_3ph",
+    "_empty_res_asymmetric_load_3ph",
+    "_empty_res_asymmetric_sgen_3ph",
+    "_empty_res_storage",
+    "_empty_res_storage_3ph",
+    "_empty_res_gen",
+    "_empty_res_protection",
+    "_ppc",
+    "_ppc0",
+    "_ppc1",
+    "_ppc2",
+    "_is_elements",
+    "_pd2ppc_lookups",
+    "version",
+    "format_version",
+    "converged",
+    "OPF_converged",
+    "name",
+    "f_hz",
+    "sn_mva",
+    "_empty_res_load_3ph",
+    "_empty_res_sgen_3ph",
+    "std_types",
+    "res_bus",
+    "res_line",
+    "res_trafo",
+    "res_trafo3w",
+    "res_impedance",
+    "res_ext_grid",
+    "res_load",
+    "res_motor",
+    "res_sgen",
+    "res_storage",
+    "res_shunt",
+    "res_gen",
+    "res_ward",
+    "res_xward",
+    "res_dcline",
+    "res_asymmetric_load",
+    "res_asymmetric_sgen",
+    "res_switch",
+    "res_tcsc",
+    "res_svc",
+    "res_ssc",
+    "res_bus_est",
+    "res_line_est",
+    "res_trafo_est",
+    "res_trafo3w_est",
+    "res_impedance_est",
+    "res_switch_est",
+    "res_bus_sc",
+    "res_line_sc",
+    "res_trafo_sc",
+    "res_trafo3w_sc",
+    "res_ext_grid_sc",
+    "res_gen_sc",
+    "res_sgen_sc",
+    "res_switch_sc",
+    "res_bus_3ph",
+    "res_line_3ph",
+    "res_trafo_3ph",
+    "res_ext_grid_3ph",
+    "res_shunt_3ph",
+    "res_load_3ph",
+    "res_sgen_3ph",
+    "res_storage_3ph",
+    "res_asymmetric_load_3ph",
+    "res_asymmetric_sgen_3ph",
+    "user_pf_options",
+    "_options",
+    "_impedance_bb_switches",
+    "_fused_bb_switches",
+    "_isolated_buses",
+    "_is_elements_final",
+    "_gen_order"
+  ]
+}

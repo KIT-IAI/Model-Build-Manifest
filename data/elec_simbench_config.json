@@ -1,0 +1,17 @@
+{
+  "solver": "ipopt",
+  "solver_options": {
+    "verbose": true,
+    "tee": false
+  },
+  "with_timeseries": false,
+  "mpc_with_initial_values": false,
+  "mpc_steps": 96,
+  "horizon": 3,
+  "dt_min": 15,
+  "flow_constraint": false,
+  "v_min": 0.9,
+  "v_max": 1.1,
+  "with_storage_ramp": false,
+  "objective": "quadratic_exchange"
+}

@@ -1,3 +1,4 @@
+
 # Decoupled Energy System Optimization
 
 Implementation of the **Model-Build-Manifest** pattern for dependency injection in sector-coupled energy systems optimization.

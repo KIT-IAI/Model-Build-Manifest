@@ -19,12 +19,16 @@ Usage:
 import argparse
 import json
 import os
+import sys
 import numpy as np
 import pandapower as pp
 import pandapower.networks as pn
 
 from simulator import ManifestFactory, ModelData, CONSTRAINT_LIBRARY
 from controller import ModelAssembler, MPCController, SolverConfig
+
+# Allow importing from data/case_study
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "data", "case_study"))
 
 
 def create_test_network():
@@ -73,6 +77,21 @@ def create_test_network():
     pp.create_sgen(net, bus=buses['pv'], p_mw=0.12, q_mvar=0.0, name="PV Plant")
     
     print(f"Network created with {len(net.bus)} buses and {len(net.line)} lines")
+    return net
+
+
+def create_simbench_network(with_ptg=False):
+    """
+    Create the 14-node SimBench case study network.
+
+    Loads '1-LV-rural1--1-sw', adds 4 PV units, symmetrises storage limits,
+    and optionally attaches a P2G unit.  See data/case_study/ for full details.
+    """
+    from create_case_network import create_base_network, add_ptg_unit
+
+    net = create_base_network()
+    if with_ptg:
+        net = add_ptg_unit(net)
     return net
 
 
